@@ -1,4 +1,6 @@
 import { Config } from '@stencil/core';
+import { postcss } from '@stencil-community/postcss';
+import autoprefixer from 'autoprefixer';
 
 export const config: Config = {
   namespace: 'stencil-panda',
@@ -21,6 +23,11 @@ export const config: Config = {
     },
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: 'new',
   },
+  plugins: [
+    postcss({
+      plugins: [autoprefixer()],
+    }),
+  ],
 };
