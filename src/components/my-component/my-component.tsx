@@ -1,8 +1,8 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 import { css } from '../../../styled-system/css';
-import '../../../styled-system/styles.css';
 import './my-component.css';
+import { button } from '../../styles/button';
 
 @Component({
   tag: 'my-component',
@@ -33,6 +33,7 @@ export class MyComponent {
     return (
       <div class={css({ color: 'red', padding: '1rem' })}>
         Hello, World! I'm {this.getText()}
+        <button class={button({ visual: 'solid' })}>lalalal</button>
       </div>
     );
   }
