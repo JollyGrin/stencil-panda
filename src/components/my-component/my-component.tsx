@@ -1,11 +1,13 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 import { css } from '../../../styled-system/css';
+import '../../../styled-system/styles.css';
+import './my-component.css';
 
 @Component({
   tag: 'my-component',
-  styleUrl: 'my-component.css',
-  shadow: false,
+  styleUrl: '../../../styled-system/styles.css',
+  shadow: true,
 })
 export class MyComponent {
   /**
@@ -29,7 +31,7 @@ export class MyComponent {
 
   render() {
     return (
-      <div class={css({ color: 'red' })}>
+      <div class={css({ color: 'red', padding: '1rem' })}>
         Hello, World! I'm {this.getText()}
       </div>
     );

@@ -4,6 +4,7 @@ import autoprefixer from 'autoprefixer';
 
 export const config: Config = {
   namespace: 'stencil-panda',
+  globalStyle: './styled-system/styles.css',
   outputTargets: [
     {
       type: 'dist',
@@ -25,9 +26,9 @@ export const config: Config = {
   testing: {
     browserHeadless: 'new',
   },
-  plugins: [
-    postcss({
-      plugins: [autoprefixer()],
-    }),
-  ],
+  // plugins: [
+  //   postcss({
+  //     plugins: [autoprefixer()],
+  //   }),
+  // ],
 };
