@@ -35,7 +35,12 @@ export class MyComponent {
     return (
       <div class={css({ color: 'red', padding: '1rem' })}>
         Hello, World! I'm {this.getText()}
-        <button class={button({ visual: 'solid' })}>lalalal</button>
+        <button
+          class={button({ visual: 'solid' })}
+          onClick={() => console.log('HIT!')}
+        >
+          lalalal
+        </button>
       </div>
     );
   }
