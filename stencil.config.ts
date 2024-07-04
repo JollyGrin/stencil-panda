@@ -26,9 +26,5 @@ export const config: Config = {
   testing: {
     browserHeadless: 'new',
   },
-  // plugins: [
-  //   postcss({
-  //     plugins: [autoprefixer()],
-  //   }),
-  // ],
+  tsconfig: 'tsconfig.json',
 };
