@@ -5,7 +5,7 @@ import { css } from '../../../styled-system/css';
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
-  shadow: true,
+  shadow: false,
 })
 export class MyComponent {
   /**
