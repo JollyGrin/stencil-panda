@@ -21,9 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Panda
-        run: npm panda
-
       - name: Build the project
         run: npm run build
 
