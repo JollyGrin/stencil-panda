@@ -1,0 +1,2 @@
+import{p as t,b as r}from"./p-edf99788.js";export{s as setNonce}from"./p-edf99788.js";import{g as e}from"./p-e1255160.js";var o=()=>{const s=import.meta.url;const r={};if(s!==""){r.resourcesUrl=new URL(".",s).href}return t(r)};o().then((async s=>{await e();return r([["p-24bc3d41",[[1,"my-component",{first:[1],middle:[1],last:[1]}]]]],s)}));
+//# sourceMappingURL=stencil-panda.esm.js.map
