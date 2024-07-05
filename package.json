@@ -33,6 +33,7 @@
   ],
   "scripts": {
     "prepare": "panda codegen",
+    "panda:update": "npx panda",
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "dev": "concurrently \"pnpm panda --watch\" \"pnpm start\"",

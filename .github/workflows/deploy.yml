@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run Panda
-        run: npm run panda
+        run: npm run panda:update
 
       - name: Build the project
         run: npm run build
