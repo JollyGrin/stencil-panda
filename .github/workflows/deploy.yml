@@ -31,5 +31,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./www # Update this if your build output directory is different
-          cname: your.custom.domain # Optional, if you use a custom domain for GitHub Pages
+          publish_dir: ./dist # Update this if your build output directory is different
+          # cname: your.custom.domain # Optional, if you use a custom domain for GitHub Pages
