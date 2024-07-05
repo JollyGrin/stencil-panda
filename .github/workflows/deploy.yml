@@ -1,0 +1,35 @@
+name: Deploy Stencil Component
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Use the Node version compatible with your Stencil setup
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Panda
+        run: npm panda
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./www # Update this if your build output directory is different
+          cname: your.custom.domain # Optional, if you use a custom domain for GitHub Pages
