@@ -38,7 +38,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git checkout -B gh-pages
-          git add dist/ -f
+          git add www/ -f
           git commit -m "Deploy Stencil build artifacts"
           git push origin gh-pages
         env:
