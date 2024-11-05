@@ -33,13 +33,13 @@ export class MyComponent {
 
   render() {
     return (
-      <div class={css({ color: 'red', padding: '1rem' })}>
+      <div class={css({ color: 'purple.400', padding: '1rem' })}>
         Hello, World! I'm {this.getText()}
         <button
           class={button({ visual: 'solid' })}
           onClick={() => console.log('HIT!')}
         >
-          lalalal
+          This is a button
         </button>
       </div>
     );
